@@ -1,0 +1,1197 @@
+/*
+*  html5resetcss
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+body{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+  
+
+@font-face {
+    font-family: "new cicle";
+    src: url("fonts/New\ Cicle\ Gordita.ttf");
+}
+
+@font-face {
+    font-family: "Century-Gothic";
+    src: url("fonts/Century-Gothic.ttf");
+}
+
+.title {
+    font-family: "Century-Gothic";
+    font-size: 0.25rem;
+    text-align: center;
+    margin-top: 2.13rem;
+    margin-bottom: 1rem;
+}
+
+.titlegray {
+    font-family: "Century-Gothic";
+    font-size: 0.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title span{
+    font-size: 0.15rem;
+}
+
+.titlegray span{
+    font-size: 0.15rem;
+}
+
+#head {
+    width: 100%;
+    height: 9.48rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/head.png);
+    position: relative;
+}
+
+#head .logo {
+    color: white;
+    font-size: 0.35rem;
+    position: absolute;
+    top: 0.61rem;
+    left: 1.73rem;
+    font-family: "new cicle";
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#head .desc {
+    width: 15.84rem;
+    position: absolute;
+    bottom: 0.98rem;
+    left: 1.76rem;
+}
+
+#head .zhdesc {
+    width: 19.2rem;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+#head .menu {
+    position: absolute;
+    right: 1.62rem;
+    top: 0.68rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#head .menu span {
+    color: white;
+    font-size: 0.14rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#head .menu span:last-child {
+    margin-right: 0;
+}
+
+#head .brandlistBox {
+    display: none;
+    width: 19.2rem;
+    height: 8rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+#head .brandlistBox .brandlist {
+    font-family: "Century-Gothic";
+    font-size: 0.2rem;
+    color: "black";
+    position: absolute;
+    left: 1.73rem;
+    top: 2.26rem;
+}
+
+#head .brandlistBox .brandlist ul li {
+    margin-bottom: 0.18rem;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 0.55rem;
+    width: 2rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+
+}
+
+#head .brandlistBox .brandlist ul li:hover {
+    border-bottom: 1px solid black;
+}
+
+#head .brandlistBox .brandlist ul li .arrow {
+    width: 0.09rem;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+    display: none;
+}
+
+#head .brandlistBox .brandimg {
+    width: 4.03rem;
+    position: absolute;
+    right: 1.1rem;
+    top: 1.9rem;
+}
+
+#brands .arrows {
+    position: relative;
+    height: 1.05rem;
+}
+
+#brands .arrows .next {
+    position: absolute;
+    right: 0.5rem;
+    left: auto;
+    width: 1.05rem;
+}
+
+#brands .arrows .prev {
+    position: absolute;
+    right: auto;
+    left: 0.5rem;
+    width: 1.05rem;
+    transform: rotate(-180deg);
+}
+
+#brands .swiper .swiper-wrapper .brand-slide {
+    box-sizing: border-box;
+    width: 19.2rem;
+    height: 8.1225rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#brands .swiper .swiper-wrapper .brand-slide .brand {
+    width: 6.15rem;
+    height: 3.78rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#brands .swiper .swiper-wrapper .brand-slide .brand img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#brands .swiper .swiper-wrapper .brand-slide .brand .more {
+    width: 1.44rem;
+    height: 0.35rem;
+    background-color: white;
+    color: black;
+    font-family: "Century-Gothic";
+    font-size: 0.12rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#brands .swiper .swiper-wrapper .brand-slide .brand .name {
+    color: white;
+    font-family: "Century-Gothic";
+    font-size: 0.2rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0.3rem;
+}
+
+#founding {
+    padding: 0 2rem 0 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 1.6rem;
+}
+
+#founding .founding-item {
+    font-family: "Century-Gothic";
+
+}
+
+#founding .founding-item .founding-pic-bg {
+    background-image: url(images/person-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 3.19rem;
+    height: 3.3rem;
+    padding: 0.08rem 0.25rem;
+}
+
+#founding .founding-item .founding-pic-bg .pic {
+    border-radius: 1.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+#founding .founding-item .name {
+    width: 2.5rem;
+    margin-left: 0.38rem;
+    height: 0.5rem;
+    font-size: 0.25rem;
+    text-align: center;
+}
+
+#founding .founding-item .duties {
+    width: 2.9rem;
+    margin-left: 0.2rem;
+    height: 0.5rem;
+    font-size: 0.15rem;
+    color: #666666;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#introduce {
+    box-sizing: border-box;
+    padding-top: 1.5rem;
+    height: 12rem;
+    background-color: #f8f8f8;
+}
+
+#introduce .box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 5rem;
+}
+
+#introduce .box .item .introImg {
+    display: inline-block;
+    width: 0.49rem;
+    margin-bottom: 0.2rem;
+}
+
+#introduce .box .item .introTitle {
+    font-family: "Century-Gothic";
+    font-size: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#introduce .box .item .zhintroTitle {
+    font-size: 0.15rem;
+    margin-bottom: 0.3rem;
+}
+
+#introduce .box .item .introDesc {
+    font-family: "Century-Gothic";
+    font-size: 0.15rem;
+    color: #666666;
+    width: 3.5rem;
+}
+
+#introduce .box .item .zhintroDesc {
+    font-family: "Century-Gothic";
+    font-size: 0.15rem;
+    color: #666666;
+    width: 3.5rem;
+    display: none;
+}
+
+#contactus {
+    height: 4rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactus .logo {
+    color: black;
+    font-size: 0.3rem;
+    font-family: "new cicle";
+}
+
+#contactus .info {
+    font-family: "Century-Gothic";
+    color: black;
+    font-size: 0.14rem;
+    height: 0.6rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+    border-bottom: 1px solid black;
+}
+
+#contactus .info .email {
+    width: 0.21rem;
+    margin-right: 0.2rem;
+}
+
+#contactus .info .first {
+    margin-right: 1.5rem;
+}
+
+#icp {
+    height: 50px;
+    font-family: "Century-Gothic";
+    color: black;
+    font-size: 0.14rem;
+    text-align: center;
+    line-height: 50px;
+}
+
+#brandhtml-logo{
+    text-align: center;
+}
+#brandhtml-logo img{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+}
+#brandhtml-content{
+    text-align: left;
+    font-family: "Century-Gothic";
+    font-size: 0.2rem;
+    color: "black";
+    padding: 0 2rem;
+    line-height: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+#brandhtml-sales{
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+#brandhtml-sales .title{
+    display: inline-block;
+    height: 1.1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#brandhtml-sales .sales-box{
+    box-sizing: border-box;
+    padding: 1rem 0 1.5rem 0;
+    /* height: 17.8rem; */
+    background-color: #f7f7f7;
+}
+
+#brandhtml-sales .sales-box .subtitle{
+    text-align: left;
+    font-size: 0.25rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+
+#brandhtml-sales .sales-box .shops-box{
+    margin-top: 1.5rem;
+}
+
+#brandhtml-sales .sales-box .sales_channel{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 7.8rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    /* margin-bottom: 1.5rem; */
+}
+#brandhtml-sales .sales-box img{
+    height: 100%;
+}
+#brandhtml-sales .sales-box .shops{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.72rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+#brandhtml-activity{
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+#brandhtml-activity .title{
+    display: inline-block;
+    height: 0.62rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+#brandhtml-activity .activity-box{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 11.5rem;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+#brandhtml-activity .activity-box img{
+    height: 5.45rem;
+}
+#brandhtml-praise{
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+#brandhtml-praise .title{
+    display: inline-block;
+    height: 0.62rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#brandhtml-praise .praise-box{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 14.88rem; */
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+
+#brandhtml-praise .praise-box img{
+    height: 7.14rem;
+    margin-bottom: 0.2rem;
+}
+
+
+#contactushtml{
+    position: absolute;
+    top: 3.84rem;
+    left: 1.57rem;  
+    width: 15.81rem;
+    height: 4.41rem;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(images/contactus.png);
+    font-size: 0.25rem;
+    font-family: "Century-Gothic";
+
+}
+
+#contactushtml p{
+    width: 5.96rem;
+    height: 0.51rem;
+    position: absolute;
+    left: 6.2rem;
+    line-height: 0.51rem;
+    text-align: center;
+}
+
+#contactushtml .address{
+    top: 1.3rem;
+}
+
+#mobile_head{display: none;}
+#mobile_head_banner{display: none;}
+#mobile_menulist_cover{display: none;}
+#mobile_menulist{display: none;}
+#mobile_founding{display: none;}
+#mobile_introduce{display: none;}
+#mobile_brands{display: none;}
+#mobile_contactus{display: none;}
+.mobile_sales_channel{display: none;}
+.mobile_activity-box{display: none;}
+
+
+
+@media screen and (max-width: 640px) {
+    #head{
+        display: none;
+    }
+    #brands{
+        display: none;
+    }
+    #founding{
+        display: none;
+    }
+    #introduce{
+        display: none;
+    }
+    #contactus{
+        display: none;
+    }
+    #mobile_head{
+        width: 100%;
+        height: 0.95rem;
+        background-color: rgb(220, 220, 220);
+        font-family: "new cicle";
+        font-size: 0.35rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    #mobile_head .menu{
+        position: absolute;
+        top: 0.35rem;
+        left: 0.38rem;
+        width: 0.4rem;
+    }
+    #mobile_head_banner{
+        display: block;
+        background-image: url(images/head_mobile.png);
+        width: 100%;
+        height: 15.26rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        user-select: none;
+    }
+    #mobile_head_banner .desc {
+        width: 7.37rem;
+        height: 1.96rem;
+        position: absolute;
+        bottom: 1.2rem;
+        left: 0.815rem;
+    }
+    #mobile_head_banner .zhdesc {
+        width: 7.37rem;
+        height: 1.53rem;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0.815rem;
+        display: none;
+    }
+    .title{
+        font-family: "Century-Gothic";
+        font-size: 0.4rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .title span{
+        font-size: 0.3rem;
+    }
+
+    .titlegray span{
+        font-size: 0.3rem;
+    }
+    .titlegray {
+        font-family: "Century-Gothic";
+        font-size: 0.4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    #mobile_brands{
+        display: block;
+        margin: 0 auto;
+        width: 8.44rem;
+    }
+
+    #mobile_brands .brand {
+        
+        height: 9.51rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0.28rem;
+    }
+    
+    #mobile_brands .brand img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+    
+    #mobile_brands .brand .more {
+        width: 3.69rem;
+        height: 0.75rem;
+        background-color: white;
+        color: #666666;
+        font-family: "Century-Gothic";
+        font-size: 0.4rem;
+        position: absolute;
+        bottom: 0.8rem;
+        left: 0.55rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    
+    }
+    
+    #mobile_brands .brand .name {
+        color: white;
+        font-family: "Century-Gothic";
+        font-size: 0.4rem;
+        text-align: center;
+        position: absolute;
+        bottom: 1.8rem;
+        left: 1.3rem;
+    }
+    #mobile_menulist_cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 1000;
+    }
+
+    #mobile_menulist{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7.75rem;
+        height: 18rem;
+        background-color: #151515;
+        display: none;
+        z-index: 1001;
+        box-sizing: border-box;
+        padding: 2.3rem 0.95rem;
+        font-size: 0.35rem;
+        font-family: "Century-Gothic";
+        color: #989898;
+    }
+    #mobile_menulist .close{
+        position: absolute;
+        top: 0.64rem;
+        left: 0.96rem;
+        width: 0.33rem;
+    }
+    #mobile_menulist p{
+        height: 0.8rem;
+        line-height: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+    .borderBottom{
+        border-bottom: 1px solid #989898;
+    }
+    #mobile_founding {
+        display: block;
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+        position: relative;
+    }
+    
+    #mobile_founding .founding-item {
+        font-family: "Century-Gothic";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    #mobile_founding .founding-item .founding-pic-bg {
+        background-image: url(images/person-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 4.96rem;
+        height: 4.24rem;
+        padding: 0.12rem 0.34rem;
+        box-sizing: border-box;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #mobile_founding .founding-item .founding-pic-bg .pic {
+        border-radius: 1.875rem;
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    
+    #mobile_founding .founding-item .name {
+        width: 5rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        font-size: 0.35rem;
+        text-align: center;
+    }
+    
+    #mobile_founding .founding-item .duties {
+        width: 5.7rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        font-size: 0.3rem;
+        color: #666666;
+        border-top: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobile_founding .next {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        left: auto;
+        width: 0.44rem;
+        z-index: 10000;
+    }
+    
+    #mobile_founding .prev {
+        position: absolute;
+        right: auto;
+        top: 1.5rem;
+        left: 1rem;
+        width: 0.44rem;
+        transform: rotate(-180deg);
+        z-index: 10000;
+    }
+
+    #mobile_introduce {
+        display: block;
+        box-sizing: border-box;
+        padding-top: 1.5rem;
+        background-color: #f8f8f8;
+    }
+    
+    #mobile_introduce .box {
+        box-sizing: border-box;
+        display: block;
+    }
+
+    #mobile_introduce .box .item{
+        padding: 1.5rem 1rem;
+    }
+    
+    #mobile_introduce .box .item .introImg {
+        display: inline-block;
+        width: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    #mobile_introduce .box .item .introTitle {
+        font-family: "Century-Gothic";
+        font-size: 0.35rem;
+        width: 100%;
+        margin-bottom: 0.2rem;
+    }
+    
+    #mobile_introduce .box .item .zhintroTitle {
+        font-size: 0.3rem;
+        width: 100%;
+        margin-bottom: 0.3rem;
+    }
+    
+    #mobile_introduce .box .item .introDesc {
+        font-family: "Century-Gothic";
+        font-size: 0.25rem;
+        line-height: 0.4rem;
+        color: #666666;
+        width: 100%;
+        margin-bottom: 0.3rem;
+    }
+    
+    #mobile_introduce .box .item .zhintroDesc {
+        font-family: "Century-Gothic";
+        font-size: 0.25rem;
+        line-height: 0.6rem;
+        color: #666666;
+        width: 100%;
+    }
+    .bgwhite{
+        background-color: white;
+    }
+    #mobile_contactus{
+        padding: 3rem 0.5rem;
+        display: block;
+        font-size: 0.35rem;
+        font-family: "Century-Gothic";
+        color: black;
+        position: relative;
+    }
+    #mobile_contactus p{
+        height: 0.9rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3rem;
+    }
+    #mobile_contactus p.jccenter{
+        justify-content: center;
+        border: 1px solid black;
+        margin-bottom: 0.6rem;
+    }
+    #mobile_contactus p .email{
+        width: 0.5rem;
+        margin:0 0.2rem;
+    }
+    #mobile_contactus .logo{
+        font-family: "new cicle";
+        font-size: 0.4rem;
+        position: absolute;
+        bottom: 0;
+        left: 3.3rem;
+    }
+    #brandhtml-logo img{
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        height: 3em;
+    }
+    #brandhtml-content{
+        text-align: left;
+        font-family: "Century-Gothic";
+        font-size: 0.3em;
+        color: "black";
+        padding: 0 0.8rem;
+        line-height: 0.7rem;
+        margin-bottom: 4rem;
+    }
+
+    #brandhtml-sales{
+        margin-bottom: 2.5rem;
+    }
+    
+    #brandhtml-sales .title{
+        height: 1.65rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #brandhtml-sales .sales-box{
+        box-sizing: border-box;
+        padding: 1.5rem 0 1.5rem 0;
+        /* height: 34.6rem; */
+        background-color: #f7f7f7;
+    }
+    
+    #brandhtml-sales .sales-box .subtitle{
+        font-size: 0.35rem;
+        margin-bottom: 1rem;
+        margin-left: 0.8rem;
+    }
+    
+    #brandhtml-sales .sales-box .sales_channel{
+        display: none;
+    }
+
+    #brandhtml-sales .sales-box .mobile_sales_channel{
+        display: block;
+        position: relative;
+        /* margin-bottom: 1.5rem; */
+    }
+
+    #brandhtml-sales .sales-box .mobile_sales_channel .next {
+        position: absolute;
+        right: 0.2rem;
+        top: 7rem;
+        left: auto;
+        width: 0.43rem;
+        height: 0.64rem;
+        z-index: 1001;
+    }
+    
+    #brandhtml-sales .sales-box .mobile_sales_channel .prev {
+        position: absolute;
+        right: auto;
+        left: 0.2rem;
+        width: 0.43rem;
+        top: 7rem;
+        transform: rotate(-180deg);
+        height: 0.64rem;
+        z-index: 1001;
+    }
+
+    #brandhtml-sales .sales-box .mobile_sales_channel .mobile_sales_channel-item {
+        box-sizing: border-box;
+        width: 100%;
+        height: 13.69rem;
+        text-align: center;
+    }
+
+    #brandhtml-sales .sales-box .mobile_sales_channel .mobile_sales_channel-item img{
+        width: 7.11rem;
+        height: 13.69rem;
+    }
+
+    #brandhtml-sales .sales-box .shops{
+        height: 12rem;
+        flex-direction: column;
+        padding: 0 0.8rem;
+    }
+    #brandhtml-sales .sales-box .shops img{
+        width: 100%;
+        height: auto;
+    }
+
+    #brandhtml-activity{
+        margin-bottom: 2.5rem;
+    }
+    #brandhtml-activity .title{
+        height: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    #brandhtml-activity .activity-box{
+        display: none;
+    }
+    #brandhtml-activity .mobile_activity-box{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 17rem;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 0.2rem;
+    }
+    #brandhtml-activity .mobile_activity-box img{
+        height: 5.45rem;
+    }
+
+    #brandhtml-praise{
+        margin-bottom: 2.5rem;
+    }
+    
+    #brandhtml-praise .praise-box{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        /* height: 31.5rem; */
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 0.2rem;
+    }
+    
+    #brandhtml-praise .praise-box img{
+        height: 7.7rem;
+    }
+    #brandhtml-praise .title{
+        height: 1.03rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #mobile_contactushtml{
+        position: absolute;
+        top: 4.74rem;
+        left: 0.65rem;  
+        width: 7.7rem;
+        height: 4.75rem;
+        background-size: 100%;
+        background-position: center;
+        background-image: url(images/contactus_mobile.png);
+        font-size: 0.35em;
+        font-family: "Century-Gothic";
+    
+    }
+    
+    #mobile_contactushtml p{
+        width: 7.7rem;
+        height: 0.99rem;
+        position: absolute;
+        line-height: 0.99rem;
+        text-align: center;
+    }
+
+    #mobile_contactushtml .email{
+        top: 0.95rem;
+    }
+    
+    #mobile_contactushtml .address{
+        top: 3.75rem;
+    }
+}
